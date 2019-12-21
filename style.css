@@ -1,0 +1,199 @@
+/*
+Theme Name: storefront child
+Author: Zhong
+Description: Child theme for storefront.
+Template:storefront
+Version: 0.1.0
+*/
+
+@import url("../storefront/style.css");
+
+@media (min-width: 768px) {
+    .main-navigation ul.menu ul.sub-menu{
+    background-color: black;  
+    opacity: 0.6;
+    }
+   
+
+.home.page:not(.page-template-template-homepage) .site-header
+{
+  margin-bottom: 0; 
+}
+    
+    .first_section .info{
+       margin-top:30px;
+       float:right;
+       width:40%;
+    }
+    
+    .first_section{
+        background-color: #d3f4ff;
+        background-image: url('assets/images/telegram.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-top:50px;
+    }
+    
+    .first_section .info h1{
+        color:#32bed3;
+        font-size:60px;
+        font-weight: 400;
+        letter-spacing: 10px;
+        text-shadow: 3px 3px 2px rgba(255,255,255);
+    } 
+    .first_section .info p{
+        color:#32bed3;
+        font-size:18px;
+        line-height: 40px;
+    }
+    
+    .second_section_1{
+ 
+        height:300px;
+        
+
+    }
+    
+    .second_section_1 ul{
+        margin:0;
+        position:relative;
+        top:100px;
+        display:flex;
+        justify-content: space-around;
+    }
+    .second_section_1 ul li{
+        list-style: none;
+        width:20%;
+        
+        height:400px; 
+        padding-top:50px;
+        color:white;
+        padding-left:10px;
+        padding-right:10px;
+        position:relative;
+    }
+    .second_section_1 .title{
+        font-size:30px;
+        text-align: center;
+        margin-bottom:20px;
+    }
+    .second_section_1 .content{
+        font-size:16px;
+        line-height: 30px;
+    }
+    
+    .second_section_1 .date{
+        position:absolute;
+        bottom:5px;
+        
+    }    
+    
+    .second_section_1 .bg1{
+        background-color: #ff6333;
+    }
+     .second_section_1 .bg2{
+        background-color: #34bbff;
+    }
+    .second_section_1 .bg3{
+        background-color: #fc3;
+    }
+    .second_section_1 .bg4{
+        background-color: #2ec66d;
+    }
+    
+    .second_section_2{
+        height:500px;
+       background-color: #f3f3f3;
+        background-image: url('assets/images/learn.jpg');
+        background-size: contain;
+        
+        background-repeat: no-repeat;
+        
+    }
+    .join_first_section{
+        height:200px;
+        position:relative;
+    }
+    .join_first_section .text_bg{
+        position:absolute;
+        top:100px;
+        background-color: #fc3;
+        opacity:0.7;
+        height:200px;
+        width:50%;
+        left:25%;
+        padding-top:20px;
+    }
+    .join_first_section .text_bg p{
+        color:white;
+        text-align: center;
+        font-size:48px;
+        
+    }
+    
+    
+    .join_second_section{
+        background-image: url('assets/images/fly.jpg');
+        height:500px;
+        background-size: 100%;
+        
+    }
+    
+    .widget-area li{
+        list-style: none;
+        background-color: #d9d9d9;
+        max-width: 150px;
+        line-height:50px;
+        text-align: center;
+        background-image: url('assets/images/course.svg');
+        background-size:auto 70%;;
+        background-repeat: no-repeat;
+        background-position: left center;
+        
+    }
+    
+    .widget-area .current-cat{
+        background-color: #707f8c;
+    }
+    
+    
+    .widget-area li a{
+        color:white;
+        font-weight: bold;
+        font-size:24px;
+    }
+    
+    .archive .site-content{
+        padding-top:50px;
+    }
+    
+    .archive-title a{
+        font-size:24px;
+    }
+    
+    .archive .hentry {
+        margin: 20px; 
+    }
+    .archive .hentry .entry-header {
+         margin-bottom: 0; 
+      }
+    
+    .site-info{
+        float:left;
+        padding:0;
+    } 
+    .wx_code{
+        float:right;
+        padding-right:100px;
+        text-align: center;
+        font-size: 12px;
+    }
+    .wx_code img{
+          height: 100px;
+          width:100px;
+    }
+    .site-footer{
+        padding-bottom:1.618em;
+    }
+    
+}
