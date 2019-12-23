@@ -8,6 +8,148 @@ Version: 0.1.0
 
 @import url("../storefront/style.css");
 
+    
+    .home.page:not(.page-template-template-homepage) .site-header
+   {
+     margin-bottom: 0; 
+   }
+
+   .first_section{
+
+    background-color: #d3f4ff;
+}
+.first_section .info{
+           color:#32bed3;
+           padding-left:30px;
+           padding-right:30px;
+           padding-top:50px;
+}
+
+    .first_section .info h1{
+        text-align: center;
+        color:#32bed3; 
+        font-weight: 400;
+        letter-spacing: 10px;
+        text-shadow: 3px 3px 2px rgba(255,255,255);
+    } 
+    .first_section .info p{
+
+        font-size:18px;
+        line-height: 40px;
+    }
+    
+    .second_section_1 ul li{
+        list-style: none;
+        width:80%;   
+        padding-top:30px;
+        color:white;
+        padding-left:10px;
+        padding-right:10px;
+        height:400px; 
+        position:relative;
+        margin-top:50px;
+    }
+    .second_section_1 .bg1{
+        background-color: #ff6333;
+    }
+     .second_section_1 .bg2{
+        background-color: #34bbff;
+    }
+    .second_section_1 .bg3{
+        background-color: #fc3;
+    }
+    .second_section_1 .bg4{
+        background-color: #2ec66d;
+    }
+    
+    .second_section_1 .title{
+        font-size:24px;
+        text-align: center;
+        margin-bottom:20px;
+    }
+    .second_section_1 .content{
+        font-size:18px;
+        line-height: 30px;
+    }
+    
+    .second_section_1 .date{
+        position:absolute;
+        bottom:5px;
+        
+    }  
+    
+    .wx_code{
+        text-align: center;
+        font-size: 12px;
+
+    }
+       .wx_code img{
+          height: 100px;
+          width:100px;
+          margin:0 auto;
+    }
+    .site-info{
+        padding:0;
+    }
+
+    .join_first_section{
+        height:100px;
+        position:relative;
+    }
+    .join_first_section .text_bg{
+        position:absolute;
+        top:50px;
+        background-color: #fc3;
+        opacity:0.7;
+        width:80%;
+        left:10%;
+        padding-top:20px;
+    }
+    .join_first_section .text_bg p{
+        color:white;
+        text-align: center;
+        font-size:32px;
+        
+    }
+    
+    
+    .join_second_section{
+        background-image: url('assets/images/fly.jpg');
+        height:200px;
+        background-size: cover;
+        
+    }
+    
+    .widget-area{      
+       margin-top:50px; 
+       margin-bottom:50px;
+    }
+   
+    .widget-area li{
+        list-style: none;
+        float:left;
+        font-size:18px;
+        margin-right:9px;
+    }
+    
+    .widget-area::after{ 
+         content: '';
+         display: table;
+         clear:both;
+     }
+    
+    .widget-area .current-cat{
+        background-color: #707f8c;
+    }
+    .widget-area .current-cat a{
+        color:white;
+        font-weight: bold;
+    }
+    
+    .archive .hentry{
+         margin-bottom: 0; 
+      }
+    
 @media (min-width: 768px) {
     .main-navigation ul.menu ul.sub-menu{
     background-color: black;  
@@ -19,19 +161,23 @@ Version: 0.1.0
 {
   margin-bottom: 0; 
 }
-    
+
+.first_section{
+    position:relative;
+    height:400px;
+    background-color: #d3f4ff;
+}
+
+.first_section img{
+    float:left;
+    height:400px;
+}
     .first_section .info{
        margin-top:30px;
        float:right;
        width:40%;
-    }
-    
-    .first_section{
-        background-color: #d3f4ff;
-        background-image: url('assets/images/telegram.svg');
-        background-size: contain;
-        background-repeat: no-repeat;
-        padding-top:50px;
+       position:absolute;
+       left:50%;     
     }
     
     .first_section .info h1{
@@ -47,11 +193,8 @@ Version: 0.1.0
         line-height: 40px;
     }
     
-    .second_section_1{
- 
-        height:300px;
-        
-
+    .second_section_1{ 
+        height:300px;      
     }
     
     .second_section_1 ul{
@@ -139,7 +282,12 @@ Version: 0.1.0
         
     }
     
+    .widget-area {
+        margin-top:0;
+    }
+    
     .widget-area li{
+        float:none;
         list-style: none;
         background-color: #d9d9d9;
         max-width: 150px;

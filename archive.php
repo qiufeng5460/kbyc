@@ -7,7 +7,12 @@
  * @package storefront
  */
 
-get_header(); ?>
+get_header(); 
+
+do_action( 'storefront_sidebar' );
+?>
+
+
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -45,8 +50,6 @@ endwhile;
  * @hooked storefront_paging_nav - 10
  */
 
-
-do_action( 'storefront_sidebar' );
 
 do_action( 'storefront_loop_after' );
 

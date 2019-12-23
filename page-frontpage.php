@@ -15,7 +15,6 @@ get_header(); ?>
 </div><!-- .col-full -->
                     
 <div class="first_section">
-   <div class="col-full">
    <div class="info">
    <h1 class="title">坤博英才</h1>
    <p class="content">
@@ -23,8 +22,11 @@ get_header(); ?>
        一直秉承务实、严谨、创先、创优、诚信的研究理念，以服务高中教育，辅助广大莘莘学子为目标。
    </p>
    </div>
-   </div><!-- .col-full -->
+
+   <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/telegram.svg">
+
 </div>
+
 
 <div class="second_section">
     
