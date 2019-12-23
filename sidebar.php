@@ -9,6 +9,10 @@
 
 <div id="secondary" class="widget-area" role="complementary">
 	<?php
+           /*20191223:确保全部cat在第一个*/
+           $cat_slug= get_category_by_slug('study_guide');
+           $cat_ids=$cat_slug->term_id;           
+           $cat1=wp_list_categories('orderby=id&echo=0&title_li=&include='.$cat_ids);
            
            $cat_slug= get_category_by_slug('chinese');
            $cat_ids=$cat_slug->term_id;
@@ -34,8 +38,8 @@
            $cat_ids=$cat_ids.','.$cat_slug->term_id;
            $cat_slug= get_category_by_slug('others');
            $cat_ids=$cat_ids.','.$cat_slug->term_id;
-           
-
-           wp_list_categories('orderby=ID&title_li=&include='.$cat_ids);
+           $cat2=wp_list_categories('orderby=id&echo=0&title_li=&include='.$cat_ids);
+                      
+           echo $cat1.$cat2;                            
         ?>
 </div><!-- #secondary -->

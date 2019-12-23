@@ -123,6 +123,7 @@ Version: 0.1.0
     .widget-area{      
        margin-top:50px; 
        margin-bottom:50px;
+       border-bottom:medium solid #707f8c;
     }
    
     .widget-area li{
@@ -284,6 +285,7 @@ Version: 0.1.0
     
     .widget-area {
         margin-top:0;
+        border-bottom:none;
     }
     
     .widget-area li{
